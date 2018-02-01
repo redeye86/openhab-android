@@ -25,6 +25,8 @@ import java.util.regex.Pattern;
 
 public class OpenHABItem {
 	private String name;
+	private String label = "";
+	private String category;
 	private String type;
 	private String groupType;
 	private String state = "";
@@ -41,6 +43,10 @@ public class OpenHABItem {
 					this.setType(childNode.getTextContent());
 				} else if (childNode.getNodeName().equals("groupType")) {
 					this.setGroupType(childNode.getTextContent());
+				} else if (childNode.getNodeName().equals("label")) {
+					this.setLabel(childNode.getTextContent());
+				} else if (childNode.getNodeName().equals("category")) {
+					this.setCategory(childNode.getTextContent());
 				} else if (childNode.getNodeName().equals("name")) {
 					this.setName(childNode.getTextContent());
 				} else if (childNode.getNodeName().equals("state")) {
@@ -62,6 +68,10 @@ public class OpenHABItem {
                     this.setType(jsonObject.getString("type"));
 				if (jsonObject.has("groupType"))
 					this.setGroupType(jsonObject.getString("groupType"));
+				if (jsonObject.has("label"))
+					this.setLabel(jsonObject.getString("label"));
+				if (jsonObject.has("category"))
+					this.setCategory(jsonObject.getString("category"));
                 if (jsonObject.has("name"))
                     this.setName(jsonObject.getString("name"));
                 if (jsonObject.has("state")) {
@@ -79,13 +89,29 @@ public class OpenHABItem {
                 e.printStackTrace();
             }
     }
-	
+
 	public String getName() {
 		return name;
 	}
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getLabel() {
+		return label;
+	}
+
+	public void setLabel(String label) {
+		this.label = label;
+	}
+
+	public String getCategory() {
+		return label;
+	}
+
+	public void setCategory(String label) {
+		this.label = label;
 	}
 
 	public String getType() {

@@ -60,6 +60,7 @@
 
     <!-- App messages strings -->
     <string name="title_voice_widget">openHAB Voice Commands</string>
+    <string name="title_homescreen_widget">OpenHAB Home screen Widget</string>
     <string name="info_voice_input">"openHAB, at your command!"</string>
     <string name="info_voice_recognized_text">"Recognized command: %1$s"</string>
     <string name="info_demo_mode">Running in demo mode. To connect to your openHAB server please go to settings menu.</string>
@@ -99,6 +100,7 @@
     <string name="title_activity_openhabwritetag">Write NFC tag</string>
     <string name="title_activity_openhabinfo">openHAB Information</string>
     <string name="title_activity_libraries">Used Libraries</string>
+    <string name="title_activity_homescreen_widget_configuration">Settings</string>
     <string name="info_write_tag">Touch the tag and keep it close until the confirmation message appear</string>
     <string name="info_write_tag_progress">Writing the tag</string>
     <string name="info_write_tag_finished">Successfully finished</string>
@@ -124,7 +126,7 @@
     <string name="mtm_decision_abort">Abort</string>
     <string name="mtm_notification">Certificate verification</string>
     <string name="settings_openhab_none">none</string>
-    
+
     <!-- Themes -->
     <string name="theme_value_light" translatable="false">light</string>
     <string name="theme_value_dark" translatable="false">dark</string>
@@ -172,6 +174,19 @@
     <string name="intro_whatis">A vendor and technology agnostic open source automation software for your home</string>
     <string name="intro_themes">Themes</string>
     <string name="intro_themes_description">Choose between several themes</string>
+
+    <!-- Homescreen Widget Configuration -->
+    <string name="search">Search</string>
+    <string name="ask_for_pin">Ask for pin...</string>
+    <string name="hint_enter_pin">Enter pin</string>
+    <string name="never">never</string>
+    <string name="on_enable">before enabling</string>
+    <string name="on_disable">before disabling</string>
+    <string name="on_en_disable">before any status change</string>
+    <string name="selected_icon">selected icon</string>
+    <string name="choose_icon">Choose Icon</string>
+    <string name="label">Label</string>
+    <string name="save">save</string>
 
     <!-- Content description for images -->
     <string name="content_description_open_roller_shutter">Open roller shutter</string>
